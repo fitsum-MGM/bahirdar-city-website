@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions - Bahir Dar City</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+           <div class="palm">🌴</div>
+            <span>Bahir Dar City</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="attractions.html" class="active">Attractions</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section attractions-hero" style="background-image: url('images/attractionshero.webp');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Discover Bahir Dar's Attractions</h1>
+            <p>Explore the natural beauty and cultural wonders of our vibrant city</p>
+        </div>
+    </section>
+
+    <!-- Main Attractions -->
+    <section class="attractions-showcase section">
+        <div class="container">
+            <!-- Blue Nile Falls Section -->
+            <div id="blue-nile" class="attraction-detail">
+                <div class="featured-attraction">
+                    <div class="attraction-image">
+                        <img src="images/nile.jpg" alt="Blue Nile Falls">
+                    </div>
+                    <div class="attraction-info">
+                        <span class="category">Natural Wonder</span>
+                        <h2>Blue Nile Falls</h2>
+                        <p>Known locally as Tis Issat - 'Smoking Water', these magnificent falls are one of Ethiopia's most spectacular sights. A natural wonder that showcases the raw power and beauty of the Blue Nile.</p>
+                        <div class="attraction-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>30km from city center</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>4-5 hours visit</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-ticket-alt"></i>
+                                <span>Entry fee: 200 ETB</span>
+                            </div>
+                        </div>
+                        <div class="additional-info">
+                            <h3>Best Time to Visit</h3>
+                            <p>August to September, during the rainy season, when the falls are at their most spectacular.</p>
+                            <h3>How to Get There</h3>
+                            <p>Take a taxi or organized tour from Bahir Dar. The journey includes a scenic drive and a short hike.</p>
+                            <h3>What to Bring</h3>
+                            <ul>
+                                <li>Comfortable walking shoes</li>
+                                <li>Camera</li>
+                                <li>Water and snacks</li>
+                                <li>Light raincoat</li>
+                            </ul>
+                        </div>
+                        <a href="#book-tour" class="btn-primary">Book a Tour</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lake Tana Monasteries Section -->
+            <div id="monasteries" class="attraction-detail">
+                <div class="featured-attraction">
+                    <div class="attraction-image">
+                        <img src="images/monasteries.jpg" alt="Lake Tana Monasteries">
+                    </div>
+                    <div class="attraction-info">
+                        <span class="category">Cultural Heritage</span>
+                        <h2>Lake Tana Monasteries</h2>
+                        <p>Discover ancient island monasteries with centuries of history, beautiful murals, and religious artifacts. These monasteries are living museums of Ethiopian Orthodox Christian heritage.</p>
+                        <div class="attraction-details">
+                            <div class="detail-item">
+                                <i class="fas fa-boat"></i>
+                                <span>Boat tour required</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Full day tour</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-ticket-alt"></i>
+                                <span>Tour prices vary</span>
+                            </div>
+                        </div>
+                        <div class="additional-info">
+                            <h3>Notable Monasteries</h3>
+                            <ul>
+                                <li>Ura Kidane Mihret</li>
+                                <li>Azwa Mariam</li>
+                                <li>Narga Selassie</li>
+                                <li>Dega Estifanos</li>
+                            </ul>
+                            <h3>Tour Information</h3>
+                            <p>Tours typically include boat transportation, guide services, and visits to 2-3 monasteries.</p>
+                            <h3>What to Know</h3>
+                            <ul>
+                                <li>Modest dress required</li>
+                                <li>Photography may be restricted</li>
+                                <li>Early morning starts recommended</li>
+                                <li>Some walking required</li>
+                            </ul>
+                        </div>
+                        <a href="#book-tour" class="btn-primary">Book a Tour</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Local Market Section -->
+            <div id="market" class="attraction-detail">
+                <div class="featured-attraction">
+                    <div class="attraction-image">
+                        <img src="images/gebeya.webp" alt="Local Market">
+                    </div>
+                    <div class="attraction-info">
+                        <span class="category">Culture</span>
+                        <h2>Traditional Market</h2>
+                        <p>Experience the vibrant local market where traditional crafts, spices, and daily life come together in a colorful display of Ethiopian culture.</p>
+                        <div class="attraction-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>City Center</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>2-3 hours recommended</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-info-circle"></i>
+                                <span>Free entry</span>
+                            </div>
+                        </div>
+                        <div class="additional-info">
+                            <h3>What to Find</h3>
+                            <ul>
+                                <li>Traditional crafts</li>
+                                <li>Local spices</li>
+                                <li>Fresh produce</li>
+                                <li>Traditional clothing</li>
+                            </ul>
+                            <h3>Best Time to Visit</h3>
+                            <p>Early morning for the freshest produce, or mid-morning for general shopping. Saturday is the busiest market day.</p>
+                            <h3>Tips for Visitors</h3>
+                            <ul>
+                                <li>Bring cash (small bills)</li>
+                                <li>Practice bargaining</li>
+                                <li>Bring your own bags</li>
+                                <li>Watch your belongings</li>
+                            </ul>
+                        </div>
+                        <a href="#guided-tour" class="btn-primary">Book a Guide</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Historical Palace Section -->
+            <div id="palace" class="attraction-detail">
+                <div class="featured-attraction">
+                    <div class="attraction-image">
+                        <img src="images/palace.jpg" alt="Historical Palace">
+                    </div>
+                    <div class="attraction-info">
+                        <span class="category">Historical</span>
+                        <h2>Historical Palace</h2>
+                        <p>Visit the historic palace and its beautiful grounds, a testament to Bahir Dar's rich history and cultural heritage.</p>
+                        <div class="attraction-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>City Center</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>2 hours visit</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-ticket-alt"></i>
+                                <span>Entry fee: 150 ETB</span>
+                            </div>
+                        </div>
+                        <div class="additional-info">
+                            <h3>Best Time to Visit</h3>
+                            <p>Visit during the dry season (October to March) for the best experience.</p>
+                            <h3>How to Get There</h3>
+                            <p>The palace is located in the city center and is easily accessible by taxi or on foot.</p>
+                            <h3>What to Bring</h3>
+                            <ul>
+                                <li>Comfortable walking shoes</li>
+                                <li>Camera</li>
+                                <li>Water and snacks</li>
+                            </ul>
+                        </div>
+                        <a href="#book-tour" class="btn-primary">Book a Tour</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="container">
+        <div class="section-header">
+            <h2>Find Attractions</h2>
+            <p class="section-subtitle">Explore our interactive map to locate attractions</p>
+        </div>
+        <div class="map-container">
+            <div id="attractions-map"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Bahir Dar City Administration is committed to developing and promoting our beautiful city while preserving its cultural heritage and natural resources.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@bahirdar.gov.et</p>
+                <p>Phone: +251 123 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bahir Dar City. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map
+        document.addEventListener('DOMContentLoaded', () => {
+            const map = L.map('attractions-map').setView([11.5930, 37.3905], 13); // Center on Bahir Dar
+
+            // Add a tile layer (map background)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Add markers for attractions
+            const attractions = [
+                {
+                    name: "Blue Nile Falls",
+                    coordinates: [11.5833, 37.4667],
+                    description: "Known locally as Tis Issat - 'Smoking Water'"
+                },
+                {
+                    name: "Lake Tana Monasteries",
+                    coordinates: [11.6667, 37.3333],
+                    description: "Ancient island monasteries with centuries of history"
+                },
+                {
+                    name: "Historical Palace",
+                    coordinates: [11.5930, 37.3905],
+                    description: "Visit the historic palace and its beautiful grounds"
+                },
+                {
+                    name: "Traditional Market",
+                    coordinates: [11.6000, 37.3833],
+                    description: "Experience the vibrant local market and traditional crafts"
+                }
+            ];
+
+            attractions.forEach(attraction => {
+                const marker = L.marker(attraction.coordinates).addTo(map);
+                marker.bindPopup(`<b>${attraction.name}</b><br>${attraction.description}`);
+            });
+        });
+    </script>
+</body>
+</html>

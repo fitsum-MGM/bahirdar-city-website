@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Bahir Dar City</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+           <div class="palm">🌴</div>
+            <span>Bahir Dar City</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section services-hero" style="background-image: url('images/serviceima.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>City Services</h1>
+            <p>Comprehensive solutions for our community's needs</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-grid section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What We Offer</h2>
+                <p class="section-subtitle">Discover the services that make Bahir Dar a top destination</p>
+            </div>
+            <div class="services-container">
+                <!-- Service Card 1: Guided Tours -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Guided Tours</h3>
+                    <p>Explore Bahir Dar with our experienced guides. Discover hidden gems and learn about the city's rich history and culture.</p>
+                    <a href="#guided-tours-modal" class="btn-primary open-modal">Learn More</a>
+                </div>
+
+                <!-- Service Card 2: Transportation -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3>Transportation</h3>
+                    <p>Convenient and reliable transportation services to help you get around the city and nearby attractions.</p>
+                    <a href="#transportation-modal" class="btn-primary open-modal">Learn More</a>
+                </div>
+
+                <!-- Service Card 3: Accommodation -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3>Accommodation</h3>
+                    <p>Find the perfect place to stay, from luxury hotels to cozy guesthouses, all with excellent service.</p>
+                    <a href="#accommodation-modal" class="btn-primary open-modal">Learn More</a>
+                </div>
+
+                <!-- Service Card 4: Cultural Experiences -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <h3>Cultural Experiences</h3>
+                    <p>Immerse yourself in Bahir Dar's vibrant culture with traditional music, dance, and local cuisine.</p>
+                    <a href="#cultural-experiences-modal" class="btn-primary open-modal">Learn More</a>
+                </div>
+
+                <!-- Service Card 5: Adventure Activities -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h3>Adventure Activities</h3>
+                    <p>Experience thrilling activities like hiking, boating, and birdwatching in and around Bahir Dar.</p>
+                    <a href="#adventure-activities-modal" class="btn-primary open-modal">Learn More</a>
+                </div>
+
+                <!-- Service Card 6: Event Planning -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Event Planning</h3>
+                    <p>Plan your events with us, from weddings to corporate gatherings, in stunning Bahir Dar locations.</p>
+                    <a href="#event-planning-modal" class="btn-primary open-modal">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Services -->
+    <!-- Modal 1: Guided Tours -->
+    <div id="guided-tours-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Guided Tours</h2>
+            <p>Explore Bahir Dar with our experienced guides. Discover hidden gems and learn about the city's rich history and culture.</p>
+            <ul>
+                <li>Half-day and full-day tours available</li>
+                <li>Customizable itineraries</li>
+                <li>Expert local guides</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal 2: Transportation -->
+    <div id="transportation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Transportation</h2>
+            <p>Convenient and reliable transportation services to help you get around the city and nearby attractions.</p>
+            <ul>
+                <li>Airport transfers</li>
+                <li>Car rentals</li>
+                <li>Private and group tours</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal 3: Accommodation -->
+    <div id="accommodation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Accommodation</h2>
+            <p>Find the perfect place to stay, from luxury hotels to cozy guesthouses, all with excellent service.</p>
+            <ul>
+                <li>Luxury resorts</li>
+                <li>Budget-friendly options</li>
+                <li>Family-friendly accommodations</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal 4: Cultural Experiences -->
+    <div id="cultural-experiences-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Cultural Experiences</h2>
+            <p>Immerse yourself in Bahir Dar's vibrant culture with traditional music, dance, and local cuisine.</p>
+            <ul>
+                <li>Traditional coffee ceremonies</li>
+                <li>Local craft workshops</li>
+                <li>Cultural festivals</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal 5: Adventure Activities -->
+    <div id="adventure-activities-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Adventure Activities</h2>
+            <p>Experience thrilling activities like hiking, boating, and birdwatching in and around Bahir Dar.</p>
+            <ul>
+                <li>Boat tours on Lake Tana</li>
+                <li>Hiking to Blue Nile Falls</li>
+                <li>Birdwatching tours</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal 6: Event Planning -->
+    <div id="event-planning-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Event Planning</h2>
+            <p>Plan your events with us, from weddings to corporate gatherings, in stunning Bahir Dar locations.</p>
+            <ul>
+                <li>Venue selection</li>
+                <li>Catering services</li>
+                <li>Event coordination</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Bahir Dar City Administration is committed to developing and promoting our beautiful city while preserving its cultural heritage and natural resources.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@bahirdar.gov.et</p>
+                <p>Phone: +251 123 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bahir Dar City. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
